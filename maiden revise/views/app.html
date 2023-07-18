@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./../styles/vegth.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./../styles/app.css" />
+    <link rel="stylesheet" href="./../styles/media-queries/mobile-query.css" />
+    <script src="./../app.js" type="module" defer></script>
+    <script src="./../utils/btn.js" defer></script>
+    <script src="./../utils/mediaQuery.js" defer></script>
+    <script src="./../models/Draft.js" type="module" defer></script>
+    <script src="https://unpkg.com/sharect@2.0.0/dist/sharect.js"></script>
+    <title>Maiden | Voice Assistant</title>
+  </head>
+  <body>
+    <main>
+      <section class="header-container">
+        <div class="history-container">
+          <button class="history-btn h-btn">
+           
+              <i class="material-icons">history</i>
+            <!--<img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-outlined/24/ffffff/overview-pages-3.png"
+              alt="overview-pages-3"
+            />
+            
+            <div class="hstry">Maiden Activity</div>-->
+          </button>
+        </div>
+        <div class="maiden-container">
+          <img class="logo" width="24" height="24" src="./../styles/vegth.png"/>
+          <p>
+            <a href="./../index.html" class="maiden-link">MAIDEN</a>
+          </p>
+        </div>
+        <div class="links-container">
+          <button class="link-btn h-btn">
+            <i class="material-icons">link</i>
+          </button>
+
+            <!--<img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-sharp/24/ffffff/link--v1.png"
+              alt="link--v1"
+            />-->
+            <div class="lnks">LINKS</div>
+          </button>
+        </div>
+      </section>
+      <section class="content-container">
+        <div class="history-content-container"></div>
+        <div class="ai-response-container">
+          
+          <div class="response-parent"></div>
+          <div class="share-container">
+            <button class="btn-share" id="shareBtn">
+              <i class="material-icons">share</i></button>
+          </div>
+          <div class="stop-generating-container">
+            <button class="stop-generating hidden">stop generating</button>
+          </div>
+        </div>
+        <div class="link-content-container hidden"></div>
+      </section>
+      <section class="footer-container">
+        <div class="button-container">
+          <button class="speak">Speak<span class="content"></span></button>
+        </div>
+        <button class="btn-return">
+          <p class="arrow"><</p>
+        </button>
+      </section>
+      <section class="modal hidden">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="top">
+              <p class="q">QUESTION PLACEHOLDER</p>
+              <p class="close">&#x2715;</p>
+            </div>
+            <p class="a">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              molestiae excepturi officiis consectetur harum! Commodi corporis
+              quae assumenda ipsa consectetur, quas rem tempore provident eum
+              praesentium, animi culpa esse numquam temporibus hic ut ad. Eius
+              aliquam quisquam porro aliquid cumque qui voluptate eum quo quam.
+            </p>
+            <a href="" class="cont" target="_blank">continue reading...</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+      <div class="popupp" id="popup1">
+        <div class="popup-inner">
+          <h3 style="color: white">Help Center</h3>
+          <div class="help-container">
+            <ul class="help-list" style="color: black">
+              <li>
+                To use the chat, simply click on the "Speak" button and say your
+                command or question.
+              </li>
+              <li>
+                You can also continue the conversation by saying the command
+                "Continue."
+              </li>
+              <li>
+                To view your chat history, click on the "History" button in the
+                top left corner of the screen.
+              </li>
+              <li>
+                To access the provided links, click on the "Links" button in the
+                top right corner of the screen.
+              </li>
+              <li>
+                To go offline, say the command "Go Offline." This will return
+                you to the landing page.
+              </li>
+              <li>
+                To clear the chat, say the command "Clear Chat." This will
+                remove all of the messages from the chat history.
+              </li>
+            </ul>
+          </div>
+          <div class="x-container">
+            <a href="#" class="button">&#x2715;</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <a href="#popup1" class="button">
+        <div class="a-hover">
+          <button class="btn-qm">?</button>
+          <div class="help-hover-a">Help Center</div>
+        </div>
+      </a>
+    </main>
+    <script>
+      Sharect.config({
+        facebook: true,
+        twitter: true,
+        backgroundColor: '#667EEA',
+        iconColor: '#FFF',
+        selectableElements: ['.answer','.question-ai','.top','.q','.a','.modal-container','.p','.continue','.link-container','.link-content'],
+      })
+      Sharect.init()
+      
+    </script>
+  </body>
+</html>

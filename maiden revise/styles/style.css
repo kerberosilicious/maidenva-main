@@ -1,0 +1,235 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+ 
+  background-color: #000;
+  color: #f1f1f1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px 0 15px;
+}
+
+.bottom {
+  width: 1200px;
+}
+
+.bottom-container {
+  background-color: #f1f1f1;
+}
+
+.bottom-wrapper {
+  padding: 15px;
+  display: flex;
+  color: #000;
+  height: 180px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.barcode-container {
+  height: 100%;
+  width: 350px;
+  border-radius: 10px;
+  margin-right: 15px;
+  background-color: #000;
+}
+
+
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300px;
+  font-weight: 300;
+}
+
+.desc-cantainer {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.desc {
+  line-height: 85%;
+  font-size: 13px;
+  width: 530px;
+}
+
+.desc-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ask {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fetch {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 50px;
+  border-top: 0.5px solid #000;
+  background-color: #f1f1f1;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  color: #000;
+  font-size: 18px;
+  border-left: 0.5px solid #000;
+  border-right: 0.5px solid #000;
+  height: 100%;
+  width: 500px;
+  transition: opacity 0.7s;
+}
+
+.start,
+a {
+  text-decoration: none;
+}
+
+.start:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+.team-name{
+  font-size: 8px;
+}
+top-head {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  left: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(15, 15, 15);
+  border-bottom-style: solid;
+  height: 70px;
+  position: relative;
+}
+.loggm {
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  cursor: pointer;
+}
+.loggm-contain:hover .maiden-lify {
+  opacity: 1;
+  color: white;
+}
+.loggm-contain {
+  position: relative;
+}
+.link-hover {
+  position: absolute;
+  top: 27px;
+  left: 75px;
+  transition: 0.15s;
+  pointer-events: none;
+}
+.link-hover p {
+  font-size: 13px;
+  opacity: 0;
+}
+.the-svg {
+  position: relative;
+}
+.the-svg:hover .group-five-c {
+  opacity: 1;
+}
+.five-group svg{
+  width: 35px;
+  fill: white;
+  position: absolute;
+  right: 40px;
+  top: 23px;
+  cursor: pointer;
+}
+.jal {
+  border: .15px solid rgb(34, 34, 34);
+  margin-top: 6px;
+}
+.group-five-c {
+  width: 300px;
+  height: 195px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 1px 3px rgba(27, 27, 27, 0.55);
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  border-radius: 4px;
+  padding: 10px;
+  color: rgb(58, 58, 58);
+  transition: 0.15s;
+  pointer-events: none;
+  opacity: 0;
+}
+.contacts-profile {
+  display: flex;
+  margin-top: 15px;
+}
+.just-profile {
+  margin-left: 10px;
+}
+.group-five-c img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.profile-name {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: middle;
+  margin-left: 10px;
+}
+.g-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.barcode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qr-code {
+  width: 120px;
+}
+
+
